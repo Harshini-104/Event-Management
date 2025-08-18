@@ -9,9 +9,14 @@ html,body{
   height: 100%;
   width: 100%;
 }
+body{
+    color: white;
+    background: #1e1e1e;
+}
 
 .header{
-  position: sticky;
+    width: 100%;
+  position: fixed;
   z-index: 100;
   top: 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -241,19 +246,6 @@ nav ul li a{
     }
 }
 /* services  */
-/* .main1{
-    background: url(./image/img2.jpg) no-repeat center center/cover;
-    color: white;
-
-} */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #1e1e1e;
-  color: #fff;
-}
-
 .services {
   display: flex;
   justify-content: space-between;

@@ -54,6 +54,21 @@ nav ul li a{
   display: none; 
   color: aqua;
 }
+.loginbtn{
+  outline: none;
+  background-color: aqua;
+  text-decoration: none;
+  width: 50px;
+  height: 25px;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+nav ul li:hover{
+  text-decoration: underline;
+  color: aqua;
+}
 @media (max-width: 768px) {
   .nav-links {
     display: none; 

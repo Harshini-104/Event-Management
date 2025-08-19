@@ -8,15 +8,30 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" 
-     crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 </head>
 
 <body>
     <!-- header section -->
     <header class="header">
         <nav>
-            
+
             <div class="logo">
                 <h1>Stackly</h1>
             </div>
@@ -28,44 +43,44 @@
                 <li><a href="">Contact</a></li>
             </ul>
             <div class="menu-icon" onclick="toggleMenu()"> <i class="fa-solid fa-bars"></i>
-        </div>
+            </div>
         </nav>
     </header>
 
     <!-- section main -->
 
     <section class="event">
-            <div class="home" id="home">
-                <div class="content">
-                    <h3>It's time to Celebrate the Event that Lasts Longer</h3>
-                    <a href="" class="btn">Contact Us</a>
-                </div>
+        <div class="home" id="home">
+            <div data-aos="fade-down" class="content">
+                <h3 data-aos="fade-down">It's time to Celebrate the Event that Lasts Longer</h3>
+                <a href="#" class="btn">Contact Us</a>
+            </div>
 
-                <div class="swiper slider">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="./image/image1.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="./image/image2.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="./image/image3.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="./image/image4.jpeg" alt=""></div>
-                        <div class="swiper-slide"><img src="./image/image5.jpg" alt=""></div>
-                        <div class="swiper-slide"><img src="./image/image6.jpg" alt=""></div>
-                    </div>
+            <div class="swiper slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./image/image1.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/image2.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/image3.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/image4.jpeg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/image5.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/image6.jpg" alt=""></div>
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- section welcome -->
 
     <section class="welcome">
         <div class="text">
-            <h2>Welcome to <span class="span1">Stackly</span></h2>
-            <p>From Wedding Functions to Birthday Parties to Corporate Events to Musical Functions,
+            <h2 data-aos="fade-up">Welcome to <span class="span1">Stackly</span></h2>
+            <p data-aos="fade-up">From Wedding Functions to Birthday Parties to Corporate Events to Musical Functions,
                 We offer full range of Events management Services that scale to your needs & budget
             </p>
         </div>
 
         <div class="features">
-            <div class="box">
+            <div data-aos="fade-right" class="box">
                 <i class="fa-brands fa-algolia"></i>
                 <h3>Greate Services</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, velit quas sunt animi voluptatem
@@ -76,7 +91,7 @@
                 <button class="read">Read More</button>
             </div>
 
-            <div class="box">
+            <div data-aos="flip-left" class="box">
                 <i class="fa-brands fa-algolia"></i>
                 <h3>Greate People</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, velit quas sunt animi voluptatem
@@ -87,7 +102,7 @@
                 <button class="read">Read More</button>
             </div>
 
-            <div class="box">
+            <div data-aos="fade-left"class="box">
                 <i class="fa-brands fa-algolia"></i>
                 <h3>Greate Ideas</h3>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, velit quas sunt animi voluptatem
@@ -104,10 +119,10 @@
 
     <section class="service">
         <div class="sertext">
-            <div class="texthead">
-                <h1><span class="span2">Stackly</span> Services</h1>
-                <p>We make your events smart & impactful by personalised event management services</p>
-                <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, soluta exercitationem dolor
+            <div  class="texthead">
+                <h1 data-aos="fade-up"><span class="span2">Stackly</span> Services</h1>
+                <p data-aos="fade-up">We make your events smart & impactful by personalised event management services</p>
+                <h4 data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, soluta exercitationem dolor
                     maxime est similique numquam aperiam assumenda ipsa, iure, consequatur rem eveniet aliquid impedit
                     nam deserunt qui. Maxime, maiores!</h4>
             </div>
@@ -115,26 +130,26 @@
 
         <div class="infoservice">
             <div class="imageservices">
-                <img src="./image/social events.jpg" alt="">
-                <h3>Social Event</h3>
-                <p>It involves a range of tasks, including venue selection, budget management, vendor coordination,
+                <img data-aos="zoom-in-up" src="./image/social events.jpg" alt="">
+                <h3 data-aos="fade-up">Social Event</h3>
+                <p data-aos="fade-up">It involves a range of tasks, including venue selection, budget management, vendor coordination,
                     and guest list management, all aimed at creating a memorable and enjoyable experience for attendees.
                 </p>
             </div>
 
 
-            <div class="imageservices">
-                <img src="./image/birthday event.jpg" alt="">
-                <h3>Birthday Parties</h3>
-                <p>It involves a range of tasks, including venue selection, budget management, vendor coordination,
+            <div  class="imageservices">
+                <img data-aos="zoom-in-up" src="./image/birthday event.jpg" alt="">
+                <h3 data-aos="fade-up">Birthday Parties</h3>
+                <p data-aos="fade-up">It involves a range of tasks, including venue selection, budget management, vendor coordination,
                     and guest list management, all aimed at creating a memorable and enjoyable experience for attendees.
                 </p>
             </div>
 
             <div class="imageservices">
-                <img src="./image/wedding.jpg" alt="">
-                <h3>Wedding</h3>
-                <p>It involves a range of tasks, including venue selection, budget management, vendor coordination,
+                <img data-aos="zoom-in-up" src="./image/wedding.jpg" alt="">
+                <h3 data-aos="fade-up">Wedding</h3>
+                <p data-aos="fade-up">It involves a range of tasks, including venue selection, budget management, vendor coordination,
                     and guest list management, all aimed at creating a memorable and enjoyable experience for attendees.
 
                 </p>
@@ -144,7 +159,7 @@
     </section>
     <!-- section gallery -->
     <section class="gallery">
-        <div class="galltext">
+        <div data-aos="zoom-in-right" class="galltext">
             <h1><span class="span3">Stackly</span> Gallery</h1>
             <br>
             <p>We make your events smart & impactful by personalised event management services</p>
@@ -152,22 +167,22 @@
         <br>
 
         <div class="imgimg">
-            <img src="./image/img1.jpg" alt="">
-            <img src="./image/img2.jpg" alt="">
-            <img src="./image/img3.jpg" alt="">
-            <img src="./image/img4.jpg" alt="">
-            <img src="./image/img5.jpg" alt="">
-            <img src="./image/img6.jpg" alt="">
+            <img data-aos="zoom-in-down" src="./image/img1.jpg" alt="">
+            <img data-aos="zoom-in-down" src="./image/img2.jpg" alt="">
+            <img data-aos="zoom-in-down" src="./image/img3.jpg" alt="">
+            <img data-aos="zoom-in-down" src="./image/img4.jpg" alt="">
+            <img data-aos="zoom-in-down" src="./image/img5.jpg" alt="">
+            <img data-aos="zoom-in-down" src="./image/img6.jpg" alt="">
 
         </div>
     </section>
     <!-- section contact -->
     <div class="contactpro">
-        <h1>Get in Touch with <span class="span4">Stackly</span></h1>
+        <h1 data-aos="zoom-in-right">Get in Touch with <span class="span4">Stackly</span></h1>
     </div>
     <br>
     <section class="contact">
-        <div class="contactbox">
+        <div data-aos="zoom-out-up" class="contactbox">
             <h2>Get in Touch With Us!</h2>
             <p>Ask questions, schedule a meeting or request a proposal. Lets Get Started</p>
             <button class="contactbtn">contact us now</button>
@@ -210,7 +225,7 @@
             <p><i class="fa-solid fa-location-dot"></i>Gandhi Nager, Chennai 600 018</p>
         </div>
 
-        <div class="bottom">
+        <div  class="bottom">
             <p>Copyright 2025 Stackly | Design by Event Management</p>
 
             <div class="icons">
@@ -233,31 +248,42 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script>
-    var swiper = new Swiper(".slider", {
-  effect: "coverflow",
-  grabCursor: true,
-  centeredSlides: true,
-  slidesPerView: "auto",
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 0,
-    depth: 100,
-    modifier: 1,
-    slideShadows: true,
-  },
-  loop: true,
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
-});
-</script>
-<script>
-function toggleMenu() {
-    document.querySelector(".nav-links").classList.toggle("show");
-}
-</script>
+    <script>
+        var swiper = new Swiper(".slider", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+
+    <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+         once: false,
+        mirror:true,
+      });
+    </script>
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("show");
+        }
+    </script>
+   
 </body>
 
 </html>

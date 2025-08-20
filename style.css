@@ -517,6 +517,8 @@ footer{
   list-style: none;
 
 }
+
+
 .foottext ul li{
   margin-bottom: 10px;
 }
@@ -524,7 +526,16 @@ footer{
   color: #B12C00;
   cursor: pointer;
 }
-
+.aa{
+  text-decoration: none;
+  background-color: #B12C00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  color: white;
+  font-weight: 600;
+}
 .subscribe p.sub{
   color: #B12C00;
   margin-top: 15px;

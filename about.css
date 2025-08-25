@@ -9,6 +9,10 @@ html,body{
   height: 100%;
   width: 100%;
 }
+body{
+    color: white;
+    background: #1e1e1e;
+}
 
 
 .header{
@@ -313,7 +317,7 @@ nav ul li:hover{
 }
 
 .advantage h2 span{
-  color: orange;
+  color: #dc143c;
 
 }
 
@@ -337,7 +341,7 @@ nav ul li:hover{
 .box i{
   font-size: 40px;
   margin-bottom: 15px;
-  color: orange;
+  color: #dc143c;
 
 }
 .box h3{
@@ -353,7 +357,7 @@ nav ul li:hover{
 }
 
 .box:hover{
-  background: orange;
+  background: #dc143c;
   color: white;
   transform: translateY(-5px);
 
@@ -370,6 +374,20 @@ nav ul li:hover{
 
 .box:hover i{
   color: white;
+}
+
+
+@media (max-width: 992px) {
+  .advantagebox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 576px) {
+  .advantagebox {
+    grid-template-columns: 1fr;
+  }
 }
 
 
@@ -412,58 +430,232 @@ nav ul li:hover{
   font-size: 16px;
 }
 
+
+@media (max-width: 992px) {
+  .count {
+    height: 250px;
+    padding: 20px;
+  }
+
+  .countcontent {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .counter {
+    font-size: 32px;
+  }
+
+  .counterbox p {
+    font-size: 14px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .count {
+    height: auto;
+    padding: 30px 15px;
+  }
+
+  .countcontent {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .counter {
+    font-size: 28px;
+  }
+
+  .counterbox p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .counter {
+    font-size: 24px;
+  }
+
+  .counterbox p {
+    font-size: 12px;
+  }
+}
+
+
 /* section create */
 .create{
-    max-width: 1100px;
-    margin: auto;
-    padding: 40px 20px;
-    text-align: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
 }
 .span1 {
-    color: #D62828; 
+  color: #D62828; 
 }
 .createtext h1 {
-    font-size: 28px;
-    font-weight: bold;
+  font-size: 28px;
+  font-weight: bold;
 }
 .createtext p {
-    max-width: 800px;
-    margin: 10px auto 40px;
-    font-size: 16px;
-    color: black;
+  max-width: 800px;
+  margin: 10px auto 40px;
+  font-size: 16px;
+  color: black;
 }
 
 .createinfo{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 30px;
-    padding: 50px 20px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 50px 20px;
+  flex-wrap: wrap;
 }
 .imagecreate{
-    text-align: center;
-    max-width: 300px;
+  text-align: center;
+  max-width: 300px;
 }
 .imagecreate img{
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: tranform 0.8s ease, box-shadow 0.8s;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: tranform 0.8s ease, box-shadow 0.8s;
 }
 .imagecreate img:hover {
-    transform:scale(1.05);
+  transform:scale(1.05);
 }
 .imagecreate p{
-    color: gray;
+  color: gray;
 }
 @media (max-width: 768px) {
-    .createinfo {
-        flex-direction: column;
-        align-items: center;
-    }
+  .createinfo {
+    flex-direction: column;
+    align-items: center;
+  }
 }
+
+/* section team */
+
+.team {
+  padding: 60px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.teaminfo h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.teaminfo h1 span {
+  color: #dc143c;
+}
+
+.teaminfo p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+
+.team1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.members {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.members:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.members img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 2px solid #dc143c;
+}
+
+.infomembers {
+  padding: 20px;
+}
+
+.infomembers h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+.role {
+  font-size: 14px;
+  font-weight: bold;
+  color: #dc143c;
+}
+
+.role1 {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+
+.iconmedia {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.iconmedia p {
+  margin: 0;
+}
+
+.iconmedia i {
+  font-size: 18px;
+  color: #333;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.iconmedia i:hover {
+  color: #dc143c;
+  transform: scale(1.2);
+}
+
+
+@media (max-width: 1024px) {
+  .team1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .team1 {
+    grid-template-columns: 1fr;
+  }
+
+  .infomembers h3 {
+    font-size: 18px;
+  }
+}
+
+
+
 /* section footer  */
 
 footer{

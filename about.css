@@ -10,8 +10,8 @@ html,body{
   width: 100%;
 }
 body{
-    color: white;
-    background: #1e1e1e;
+  color: white;
+  background: #1e1e1e;
 }
 
 
@@ -281,7 +281,7 @@ nav ul li:hover{
 }
 
 .para{
-  color: #222;
+  color: #585353;
   display: block;
   margin-bottom: 20px;
   font-weight: bold;

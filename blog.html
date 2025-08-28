@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Page</title>
+    <link rel="stylesheet" href="./blog.css">
+</head>
+<body>
+     <!-- header section -->
+    <header class="header">
+        <nav>
+
+            <div class="logo">
+                <h1>Stackly</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./home2.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./service.html">Service</a></li>
+                <li><a href="./error.html">Blog</a></li>
+                <li><a href="./error.html">Contact</a></li>
+                <a href="./login.html"><button class="loginbtn">Login</button></a>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()"> <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+     <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("show");
+        }
+    </script>
+</body>
+</html>

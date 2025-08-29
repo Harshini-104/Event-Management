@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Page</title>
     <link rel="stylesheet" href="./blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-     <!-- header section -->
+    <!-- header section -->
     <header class="header">
         <nav>
 
@@ -28,12 +33,133 @@
     </header>
 
 
-   
+    <!-- section blog -->
 
-     <script>
+
+    <section class="blog">
+        <div class="blogimg">
+            <div class="blogtext">
+                <h1>BLOG</h1>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section items -->
+
+    <section class="cardcontainer">
+        <div class="flex">
+            <div class="card">
+                <img src="./image/blog1.jpg" alt="">
+                <div class="cardcontent">
+                    <div class="date">
+                        <i class="fa-solid fa-calendar-days"></i> 25 Sep, 2025
+                    </div>
+                    <h3>Event Security: Ensuring Safety and Peace of Mind</h3>
+                    <button class="readbtn">Read More</button>
+                </div>
+            </div>
+            <br>
+
+            <div class="card">
+                <img src="./image/blog2.jpg" alt="">
+                <div class="cardcontent">
+                    <div class="date">
+                        <i class="fa-solid fa-calendar-days"></i> 18 June, 2025
+                    </div>
+                    <h3>The Ultimate Event Planning Guide to Execution</h3>
+                    <button class="readbtn">Read More</button>
+                </div>
+            </div>
+            <br>
+
+        </div>
+        <br>
+
+        <div class="flex1">
+            <div class="card">
+                <img src="./image/blog4.jpg" alt="">
+                <div class="cardcontent">
+                    <div class="date">
+                        <i class="fa-solid fa-calendar-days"></i> 30 Dec, 2025
+                    </div>
+                    <h3>Trends in Event Panning with full support With Perfect Planning</h3>
+                    <button class="readbtn">Read More</button>
+                </div>
+            </div>
+            <br>
+
+            <div class="card">
+                <img src="./image/blog3.jpg" alt="">
+                <div class="cardcontent">
+                    <div class="date">
+                        <i class="fa-solid fa-calendar-days"></i> 10 Apr, 2025
+                    </div>
+                    <h3>Event Security: Ensuring Safety and Peace of Mind</h3>
+                    <button class="readbtn">Read More</button>
+                </div>
+            </div>
+            <br>
+
+           
+        </div>
+
+        <div class="searchbody">
+            <div class="search">
+                <h3><i class="fa-solid fa-star"></i> Search</h3>
+                <div class="searchbar">
+                    <input type="text" placeholder="Enter Keyword">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+
+            <div class="categories">
+                <h3><i class="fa-solid fa-star"></i> Categories</h3>
+
+                <ul>
+                    <li>Marketing (03)</li>
+                    <li>Digital Agency4(04)</li>
+                    <li>Creative Agency (06)</li>
+                    <li>Business Consulting (03)</li>
+                    <li>IT Solution (02)</li>
+
+                </ul>
+            </div>
+
+            <div class="sidebar">
+                <div class="done">
+                    <h3>Recent Posts</h3>
+                    <ul>
+                        <li>Digital Marketing Guide for Music Events.</li>
+                        <li>The Ultimate Guide to copy writing for Events</li>
+                        <li>6 Excellent Examples Event Invitations and Emails</li>
+                    </ul>
+                </div>
+
+                <div class="done">
+                    <h3>Recent Comments</h3>
+                    <p>No Comments to Show</p>
+                </div>
+
+                <div class="done">
+                    <h3>Archives</h3>
+                    <p>December 2024</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <script>
         function toggleMenu() {
             document.querySelector(".nav-links").classList.toggle("show");
         }
     </script>
 </body>
+
 </html>

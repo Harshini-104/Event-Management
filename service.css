@@ -95,12 +95,12 @@ nav ul li:hover{
 
 .what{
   position: relative;
-  background: url(./image/what.jpeg)no-repeat center center/cover;
-  height: 60vh;
+  background: url(./image/contact.jpg)no-repeat center center/cover;
+  height: 50vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: Red;
+  color: white;
 }
 
 .wedo{

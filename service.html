@@ -9,6 +9,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+      integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
 </head>
 
 <body>
@@ -37,7 +52,7 @@
     <section class="what">
         <div class="wedo">
             <div class="contentwe">
-                <h1 class="weh1">What We Do...</h1>
+                <h1 data-aos="zoom-in" class="weh1">What We Do...</h1>
             </div>
         </div>
     </section>
@@ -45,22 +60,22 @@
     <br>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
+    
 
     <!-- section specialist -->
     <section>
         <div class="specialist">
             <div class="eventname">
                 <div class="infoevent">
-                    <h1>The <span>Event Management</span> Specialists</h1>
-                    <h4>From Wedding Functions to Birthday Parties or Corporate Events to Musical Functions,
+                    <h1 data-aos="fade-up">The <span>Event Management</span> Specialists</h1>
+                    <h4 data-aos="fade-up" data-aos-duration="3000">From Wedding Functions to Birthday Parties or Corporate Events to Musical Functions,
                         We offer full range of Events Management Services that scale to your needs & budget.
                     </h4>
                 </div>
             </div>
         </div>
+
+        
 
 
         <div class="serviceinfo">
@@ -161,8 +176,8 @@
 
     <section class="countries">
         <div class="topcities">
-            <h2><span>Stackly</span> Services In Top Countries</h2>
-            <p>Beautiful Coutries With Outstanding Events</p>
+            <h2 data-aos="fade-up"><span>Stackly</span> Services In Top Countries</h2>
+            <p data-aos="fade-up">Beautiful Coutries With Outstanding Events</p>
         </div>
         <br>
         <br>
@@ -309,6 +324,15 @@
     </section>
 
 
+     <script>
+      // $(document).on('ready', function () {
+      // initialization of aos
+      AOS.init({
+        duration: 650,
+         once: false,
+        mirror:true,
+      });
+    </script>
 
     <script>
         function toggleMenu() {

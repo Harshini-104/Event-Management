@@ -9,6 +9,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -39,7 +48,7 @@
     <section class="blog">
         <div class="blogimg">
             <div class="blogtext">
-                <h1>BLOG</h1>
+                <h1 data-aos="zoom-in">BLOG</h1>
             </div>
         </div>
     </section>
@@ -49,7 +58,7 @@
 
     <section class="cardcontainer">
         <div class="flex">
-            <div class="card">
+            <div data-aos="fade-up" data-aos-duration="3000" class="card">
                 <img src="./image/blog1.jpg" alt="">
                 <div class="cardcontent">
                     <div class="date">
@@ -61,7 +70,7 @@
             </div>
             <br>
 
-            <div class="card">
+            <div data-aos="fade-up" data-aos-duration="3000" class="card">
                 <img src="./image/blog2.jpg" alt="">
                 <div class="cardcontent">
                     <div class="date">
@@ -77,7 +86,7 @@
         <br>
 
         <div class="flex1">
-            <div class="card">
+            <div data-aos="fade-up" data-aos-duration="3000" class="card">
                 <img src="./image/blog4.jpg" alt="">
                 <div class="cardcontent">
                     <div class="date">
@@ -89,7 +98,7 @@
             </div>
             <br>
 
-            <div class="card">
+            <div data-aos="fade-up" data-aos-duration="3000" class="card">
                 <img src="./image/blog3.jpg" alt="">
                 <div class="cardcontent">
                     <div class="date">
@@ -101,10 +110,10 @@
             </div>
             <br>
 
-           
+
         </div>
 
-        <div class="searchbody">
+        <div  data-aos="fade-up" data-aos-duration="3000" class="searchbody">
             <div class="search">
                 <h3><i class="fa-solid fa-star"></i> Search</h3>
                 <div class="searchbar">
@@ -116,7 +125,7 @@
             <div class="categories">
                 <h3><i class="fa-solid fa-star"></i> Categories</h3>
 
-                <ul>
+                <ul data-aos="fade-up">
                     <li>Marketing (03)</li>
                     <li>Digital Agency4(04)</li>
                     <li>Creative Agency (06)</li>
@@ -130,15 +139,15 @@
                 <div class="done">
                     <h3>Recent Posts</h3>
                     <ul>
-                        <li>Digital Marketing Guide for Music Events.</li>
-                        <li>The Ultimate Guide to copy writing for Events</li>
-                        <li>6 Excellent Examples Event Invitations and Emails</li>
+                        <li data-aos="fade-up">Digital Marketing Guide for Music Events.</li>
+                        <li data-aos="fade-up">The Ultimate Guide to copy writing for Events</li>
+                        <li data-aos="fade-up">6 Excellent Examples Event Invitations and Emails</li>
                     </ul>
                 </div>
 
                 <div class="done">
                     <h3>Recent Comments</h3>
-                    <p>No Comments to Show</p>
+                    <p data-aos="fade-up">No Comments to Show</p>
                 </div>
 
                 <div class="done">
@@ -152,7 +161,15 @@
 
 
 
-
+    <script>
+        // $(document).on('ready', function () {
+        // initialization of aos
+        AOS.init({
+            duration: 650,
+            once: false,
+            mirror: true,
+        });
+    </script>
 
 
     <script>

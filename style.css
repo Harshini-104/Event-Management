@@ -272,12 +272,10 @@ nav ul li:hover{
   100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
 }
 
-/* Base (desktop) styles are already given */
 
-/* Tablets (max-width: 768px) */
 @media (max-width: 768px) {
   .petals span {
-    font-size: 18px;   /* smaller petals */
+    font-size: 18px;   
     top: -40px;
   }
 
@@ -290,20 +288,21 @@ nav ul li:hover{
   .petals span:nth-child(7),
   .petals span:nth-child(8),
   .petals span:nth-child(9),
-  .petals span:nth-child(10) {
-    font-size: 18px;  /* reduce all sizes */
+  .petals span:nth-child(10)
+   {
+    font-size: 18px;  
   }
 }
 
-/* Mobile (max-width: 480px) */
+
 @media (max-width: 480px) {
   .petals span {
-    font-size: 14px;   /* even smaller */
+    font-size: 14px;   
     top: -30px;
-    animation: fall 7s linear infinite; /* slower fall for better effect */
+    animation: fall 7s linear infinite; 
   }
 
-  /* Optional: adjust spacing */
+  
   .petals span:nth-child(1) { left: 10%; }
   .petals span:nth-child(2) { left: 25%; }
   .petals span:nth-child(3) { left: 40%; }

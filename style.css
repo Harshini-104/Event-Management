@@ -289,7 +289,8 @@ nav ul li:hover{
   .petals span:nth-child(8),
   .petals span:nth-child(9),
   .petals span:nth-child(10)
-   {
+   
+{
     font-size: 18px;  
   }
 }

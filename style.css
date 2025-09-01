@@ -342,6 +342,11 @@ nav ul li:hover{
   .img-content{
     margin-left: 32px;
     height: 97.5%;
+    width: 80.2%;
+  }
+
+  .img-content p{
+    font-size: 13px;
   }
 }
 

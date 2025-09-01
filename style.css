@@ -106,6 +106,12 @@ nav ul li:hover{
   }
 }
 
+@media (max-width: 375px){
+  .header{
+    width: 91.4%;
+  }
+}
+
 
 
 
@@ -332,17 +338,16 @@ nav ul li:hover{
   }
 }
 
-@media (max-width:320px) {
-  .img-content {
-    margin-left: 27px;
-    width: 80%;
-    height: 97%;
-  }
-
-  .img-content p{
-    font-size: 12px;
+@media (max-width: 376px) {
+  .img-content{
+    margin-left: 32px;
+    height: 97.5%;
   }
 }
+
+
+
+
 
 /* .textbox h1{
   font-size: 52px;

@@ -70,6 +70,10 @@ nav ul li:hover{
 }
 
 @media (max-width: 768px) {
+
+  .header{
+    width: 100%;
+  }
   .nav-links {
     display: none; 
     flex-direction: column;
@@ -89,6 +93,20 @@ nav ul li:hover{
     display: block; 
   }
 }
+
+@media (max-width: 520px){
+  .header{
+    width: 95%;
+  }
+}
+
+@media (max-width: 320px){
+  .header{
+    width: 91.4%;
+  }
+}
+
+
 
 
 
@@ -213,7 +231,7 @@ nav ul li:hover{
 }
 
 .img-content{
-  border-radius: 28px;
+  border-radius: 20px;
   margin-left: 75px;
   width: 75%;
   height: 99%;
@@ -308,9 +326,21 @@ nav ul li:hover{
   }
 
   .img-content {
-    margin-left: 0;
-    width: 85%;
-    height: 95%;
+    margin-left: 24px;
+    width: 80%;
+    height: 96%;
+  }
+}
+
+@media (max-width:320px) {
+  .img-content {
+    margin-left: 27px;
+    width: 80%;
+    height: 97%;
+  }
+
+  .img-content p{
+    font-size: 12px;
   }
 }
 

@@ -502,7 +502,7 @@ nav ul li:hover{
   max-width: 800px;
   margin: 10px auto 40px;
   font-size: 16px;
-  color: black;
+  color: white;
 }
 
 .createinfo{
@@ -548,7 +548,7 @@ nav ul li:hover{
 .teaminfo h1 {
   font-size: 36px;
   margin-bottom: 10px;
-  color: #333;
+  color: white;
 }
 
 .teaminfo h1 span {
@@ -557,7 +557,7 @@ nav ul li:hover{
 
 .teaminfo p {
   font-size: 16px;
-  color: #666;
+  color: #fff;
   margin-bottom: 50px;
 }
 
@@ -727,7 +727,7 @@ footer{
 }
 .contactfoot p{
   margin-bottom: 8px;
-  color: black;
+  color: white;
 
 }
 .contactfoot i{

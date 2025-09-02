@@ -489,6 +489,7 @@ nav ul li:hover{
   justify-content: space-between;
   align-items: stretch;
   min-height: 90vh;
+  padding-top: 80px;
 }
 
 

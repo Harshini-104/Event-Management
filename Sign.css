@@ -1,0 +1,181 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html,body{
+  height: 100%;
+  width: 100%;
+}
+body{
+    color: white;
+    background: #1e1e1e;
+}
+
+.header{
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo{
+  color: aqua;
+}
+
+nav{
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(67, 65, 65);
+  position: relative;
+  height: 70px;
+}
+
+nav ul{
+  display: flex;
+  gap: 60px;
+}
+
+nav ul li{
+  list-style-type: none;
+}
+nav ul li a{
+  text-decoration: none;
+  color: aqua;
+}
+.menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+  display: none; 
+  color: aqua;
+}
+.loginbtn{
+  outline: none;
+  background-color: aqua;
+  text-decoration: none;
+  width: 50px;
+  height: 25px;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; 
+    flex-direction: column;
+    background: #444;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .nav-links.show {
+    display: flex; 
+  }
+
+  .menu-icon {
+    display: block; 
+  }
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg,#0b0f1a,#12182a);
+}
+
+.signinbox {
+  
+  background: rgba(255,255,255,.08);
+  backdrop-filter: blur(12px);
+  border:1px solid rgba(255,255,255,.2);
+  border-radius:20px;
+  padding:40px 30px;
+  width:350px;
+  box-shadow:0 8px 25px rgba(0,0,0,.5);
+  text-align:center;
+}
+
+.signinbox h2 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+
+.group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #fff;
+  
+}
+
+.group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #0b0f1a;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s;
+  background:#0b0f1a;
+  color: #fff;
+}
+
+.group input:focus {
+  border-color: #2575fc;
+}
+
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background:linear-gradient(135deg,#8a4bff,#00d1ff);
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  filter: brightness(1.1);
+}
+
+.signuptext {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.signuptext a {
+  color: #2575fc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signuptext a:hover {
+  text-decoration: underline;
+}

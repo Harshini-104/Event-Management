@@ -1,16 +1,27 @@
-let showingHome1 = true; // start with home1
+function setupDropdown(linkId, menuId, wrapperId) {
+  const link = document.getElementById(linkId);
+  const menu = document.getElementById(menuId);
+  const wrapper = document.getElementById(wrapperId);
 
-        function toggleHome() {
-            document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
-            if (showingHome1) {
-                document.getElementById("home2").classList.add("active");
-            } else {
-                document.getElementById("home1").classList.add("active");
-            }
-            showingHome1 = !showingHome1; // flip state
-        }
+ 
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    menu.style.display = "block";
+  });
 
-        function showSection(id) {
-            document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
-            document.getElementById(id).classList.add("active");
-        }
+
+  wrapper.addEventListener("mouseleave", function () {
+    menu.style.display = "none";
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".dropdown-menu").forEach(menu => {
+    menu.style.display = "none";
+  });
+});
+
+
+setupDropdown("homeLink", "homeDropdown", "homeDropdownWrapper");
+setupDropdown("serviceLink", "serviceDropdown", "serviceDropdownWrapper");
+setupDropdown("blogLink", "blogDropdown", "blogDropdownWrapper");

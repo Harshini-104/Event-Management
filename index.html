@@ -29,7 +29,13 @@
                 <h1>Stackly</h1>
             </div>
             <ul class="nav-links">
-                <li><a href="./home2.html">Home</a></li>
+                  <li class="dropdown" id="homeDropdownWrapper">
+                        <a href="./index.html">Home <span id="homeLink">▼</span></a>
+                        <ul class="dropdown-menu" id="homeDropdown">
+                            <li><a href="./home2.html">Home2</a></li>
+                        </ul>
+                    </li>
+                <!-- <li><a href="./home2.html">Home</a></li> -->
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./service.html">Service</a></li>
                 <li><a href="./blog.html">Blog</a></li>
@@ -49,7 +55,7 @@
         <br>
         <br>
 
-        <div class="hero">
+        <div class="happy">
             <div class="maintext">
                 <h4>CAPTURE HAPPY MOMENTS WITH US</h4>
                 <h1>EVENT <br> MANAGEMENT</h1>
@@ -314,7 +320,7 @@
             document.querySelector(".nav-links").classList.toggle("show");
         }
     </script>
-
+    <script src="./home.js"></script>
 </body>
 
 </html>

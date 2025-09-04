@@ -342,196 +342,196 @@ nav ul li:hover{
 }
 /* service  */
 .service{
-    max-width: 1100px;
-    margin: auto;
-    padding: 40px 20px;
-    text-align: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
 }
 .span2 {
-    color: #d62828; 
+  color: #d62828; 
 }
 .sertext h1 {
-    font-size: 28px;
-    font-weight: bold;
+  font-size: 28px;
+  font-weight: bold;
 }
 .sertext p {
-    max-width: 800px;
-    margin: 10px auto 40px;
-    font-size: 16px;
-    color: white;
+  max-width: 800px;
+  margin: 10px auto 40px;
+  font-size: 16px;
+  color: white;
 }
 
 .sertext h4{
-    max-width: 800px;
-    margin: 10px auto 40px;
-    font-size: 16px;
-    color: #fff;
+  max-width: 800px;
+  margin: 10px auto 40px;
+  font-size: 16px;
+  color: #fff;
 }
 .infoservice{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 30px;
-    padding: 50px 20px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 50px 20px;
+  flex-wrap: wrap;
 }
 .imageservices{
-    text-align: center;
-    max-width: 300px;
+  text-align: center;
+  max-width: 300px;
 }
 .imageservices img{
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: tranform 0.8s ease, box-shadow 0.8s;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: tranform 0.8s ease, box-shadow 0.8s;
 }
 .imageservices img:hover {
-    transform:scale(1.05);
+  transform:scale(1.05);
 }
 .imageservices p{
-    color: gray;
+  color: gray;
 }
 @media (max-width: 768px) {
-    .infoservice {
-        flex-direction: column;
-        align-items: center;
-    }
+  .infoservice {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .event{
-    position: relative;
-    background: url(./image/img1.jpg) no-repeat center center/cover;
-    height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
+  position: relative;
+  background: url(./image/img1.jpg) no-repeat center center/cover;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 .full{
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 55px;
-    text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 55px;
+  text-align: center;
 
 }
 
 .eventconent{
-    max-width: 800px;
+  max-width: 800px;
     
     
     
 }
 .hea1{
-    font-size: 35px;
-    font-weight: bold;
-    margin-bottom: 15px;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 15px;
     
 
 }
 /* section photos */
 
 .swiper {
-    width: 50%;
-    height: 70%;
+  width: 50%;
+  height: 70%;
 }
 
 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #444;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
     
 }
 .swiper-slide img:hover{
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .organised h2{
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 10px;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 10px;
 
 }
 
 .spann3{
-    color: #dc143c;
+  color: #dc143c;
 }
 @media(max-width: 768px) {
-    .organised h2{
-        font-size: 25px;
-    }
+  .organised h2{
+    font-size: 25px;
+  }
 }
 /* section news */
 
 .bodynews{
-    background-color: white;
-    color: #555;
+  background-color: white;
+  color: #555;
 }
 
 .news{
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-    padding: 40px 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 20px;
 
 }
 
 .news h2{
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 10px;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 10px;
 
 }
 
 .spann1{
-    color: #dc143c;
+  color: #dc143c;
 }
 .intro{
-    text-align: center;
-    margin-bottom: 40px;
-    color: #555;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #555;
 
 }
 
 .newscontainer{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 
 }
 
 .eventnews img{
-    width: 100%;
-    height: 250px;
-    display: block;
+  width: 100%;
+  height: 250px;
+  display: block;
 }
 
 .eventnews{
-    background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
 .eventnews:hover{
-    transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 
 .eventinfo{
-    padding: 15px;
+  padding: 15px;
 
 }
 

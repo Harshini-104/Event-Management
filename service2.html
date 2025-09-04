@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Page2</title>
+    <link rel="stylesheet" href="service2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <!-- header section -->
+    <header class="header">
+        <nav>
+
+            <div class="logo">
+                <h1>Stackly</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="./home2.html">Home</a></li>
+                <li><a href="./about2.html">About</a></li>
+                <li><a href="./service2.html">Service</a></li>
+                <li><a href="./error.html">Blog</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <a href="./login.html"><button class="loginbtn">Login</button></a>
+            </ul>
+            <div class="menu-icon" onclick="toggleMenu()"> <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- section services -->
+
+    <section class="service">
+        <h6>Our Services</h6>
+        <h2>We Provide The Best Services</h2>
+
+        <div class="servicecontent">
+            <div class="servicetext">
+                <img src="./image/./blog3.jpg" alt="">
+                <div class="serviceinfo">
+                    <h3>Wedding</h3>
+                    <p>It involves a range of tasks, including venue selection, budget management, vendor coordination,
+                        and guest list management.</p>
+                </div>
+            </div>
+
+            <div class="servicetext">
+                <img src="./image/social events.jpg" alt="">
+                <div class="serviceinfo">
+                    <h3>Corporate Event</h3>
+                    <p>It involves a range of tasks, including venue selection, budget management, vendor coordination,
+                        and guest list management.</p>
+                </div>
+            </div>
+
+            <div class="servicetext">
+                <img src="./image/party1.jpg" alt="">
+                <div class="serviceinfo">
+                    <h3>Private Party</h3>
+                    <p>It involves a range of tasks, including venue selection, budget management, vendor coordination,
+                        and guest list management.</p>
+                </div>
+            </div>
+
+            <div class="servicetext">
+                <img src="./image/./success1.jpg" alt="">
+                <div class="serviceinfo">
+                    <h3>Friends Party</h3>
+                    <p>It involves a range of tasks, including venue selection, budget management, vendor coordination,
+                        and guest list management.</p>
+                </div>
+            </div>
+
+            <div class="servicetext">
+                <img src="./image/3.jpeg" alt="">
+                <div class="serviceinfo">
+                    <h3>Conference</h3>
+                    <p>It involves a range of tasks, including venue selection, budget management, vendor coordination,
+                        and guest list management.</p>
+                </div>
+            </div>
+
+            <div class="servicetext">
+                <img src="./image/business events.jpg" alt="">
+                <div class="serviceinfo">
+                    <h3>Business Meeting</h3>
+                    <p>It involves a range of tasks, including venue selection, budget management, vendor coordination,
+                        and guest list management.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- section service details -->
+
+    <section class="servicedetails">
+
+        <!-- <h3><Span>Stackly</Span> Service Details</h3> -->
+        <div class="details">
+            <div class="detailscard">
+                <img src="./image/blog1.jpg" alt="">
+                <div class="detailsleft">
+                    <h1><span>Stackly</span> Event Managemet For Your Ever Lasting Moments.</h1>
+                    <h5>It involves a range of tasks, including venue selection, budget management, vendor coordination,
+                        and guest list management. <br><br>From Wedding Functions to Birthday Parties to Corporate
+                        Events to
+                        Musical Functions, We offer full range of Events management Services that scale to your needs &
+                        budget.guest list management, all aimed at creating a memorable and enjoyable experience for
+                        attendees. Digital Marketing Guide for Music Events.
+                    </h5>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="detailsright">
+            <div class="search">
+                <div class="searchbar">
+                    <input type="text" placeholder="Enter Keyword">
+                    <a href="./error.html"><button><i class="fa-solid fa-magnifying-glass"></i></button></a>
+                </div>
+            </div>
+
+            <div class=servicebox>
+                <h3 class="under">Our Services</h3>
+                <div class="ourservices">
+                    <p>✔️ Corporate Party</p>
+                    <hr>
+                    <p>✔️ Birthday Party</p>
+                    <hr>
+                    <p>✔️ Wedding Party</p>
+                    <hr>
+                    <p>✔️ Conference Party</p>
+                    <hr>
+                    <p>✔️ Friends Party</p>
+                    <hr>
+                    <p>✔️ Private Party</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        // $(document).on('ready', function () {
+        // initialization of aos
+        AOS.init({
+            duration: 650,
+            once: false,
+            mirror: true,
+        });
+    </script>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>

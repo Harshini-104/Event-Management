@@ -109,7 +109,7 @@ nav ul li:hover{
   letter-spacing: 3px;
   margin-top: 20px;
 }
-@media (max-width: 445px) {
+/* @media (max-width: 445px) {
   .what{
     width: 75vh;
   }
@@ -129,6 +129,45 @@ nav ul li:hover{
   }
 
 
+} */
+
+@media (max-width: 1024px) {
+  .contentwe {
+    font-size: 28px;
+    letter-spacing: 2px;
+  }
+  .what {
+    height: 45vh;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .contentwe {
+    font-size: 24px;
+    letter-spacing: 2px;
+  }
+  .what {
+    height: 40vh;
+    padding: 20px;
+  }
+  .wedo {
+    padding: 30px 15px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .contentwe {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  .what {
+    height: 35vh;
+  }
+  .wedo {
+    padding: 20px 10px;
+  }
 }
 
 

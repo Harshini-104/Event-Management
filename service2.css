@@ -87,6 +87,44 @@ nav ul li:hover{
   }
 }
 
+.what{
+  position: relative;
+  background: url(./image/contact.jpg)no-repeat center center/cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.wedo{
+  max-width: 1100px;
+  max-width: auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contentwe{
+  font-size: 32px;
+  letter-spacing: 3px;
+  margin-top: 20px;
+}
+
+@media (max-width: 375px) {
+  .contentwe {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 320px) {
+ .what{
+  width: 62vh;
+ }
+}
+
+
+
+
 /* section service */
 
 .service{
@@ -192,7 +230,8 @@ nav ul li:hover{
   width: 1100px;
   margin: auto;
   padding: 40px 20px;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
 }
 
 .servicedetails h3 {
@@ -300,11 +339,6 @@ nav ul li:hover{
   line-height: 3;
 }
 
-/* .servicebox h3{
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-
-} */
 
 .under{
   color: #444;
@@ -314,17 +348,137 @@ nav ul li:hover{
 
 }
 
+.tagbox{
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px; */
+  width: 300px;
+  background: #dfdbdb;
+  margin-left: 12px;
+  
+}
+
+.tagbox h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tags span {
+  background: #ffffff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.tags span:hover {
+  background: #ff0066;
+}
 
 
+@media (max-width: 1024px) {
+  .servicedetails {
+    width: 95%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .detailsleft {
+    width: 100%;
+  }
+
+  .details h1 {
+    font-size: 28px;
+  }
+
+  .details h5 {
+    font-size: 13px;
+  }
+
+  .tagbox {
+    width: 100%;
+    margin-left: 0;
+  }
+}
 
 
+@media (max-width: 768px) {
+  .servicedetails {
+    grid-template-columns: 1fr;
+  }
+
+  .detailscard img {
+    height: 300px;
+  }
+
+  .details h1 {
+    font-size: 24px;
+  }
+
+  .details h5 {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+
+  .detailsright {
+    padding: 20px;
+  }
+
+  .search,
+  .servicebox,
+  .tagbox {
+    margin: 10px 0;
+    width: 100%;
+  }
+}
 
 
+@media (max-width: 425px) {
+  .detailscard img {
+    height: 220px;
+  }
 
+  .details h1 {
+    font-size: 20px;
+  }
 
+  .details h5 {
+    font-size: 11px;
+  }
 
+  .searchbar input {
+    font-size: 12px;
+    padding: 10px;
+  }
 
+  .searchbar button {
+    font-size: 14px;
+    padding: 10px 14px;
+  }
 
+  .tags span {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .servicedetails {
+    grid-template-columns: 1fr;
+  }
+}
 
 
 

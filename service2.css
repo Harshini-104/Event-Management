@@ -124,14 +124,14 @@ nav ul li:hover{
     font-size: 18px;
   }
 
+  .what{
+    width: 375px;
+  }
+
 
 }
 
-@media (max-width: 320px) {
- .what{
-  width: 62vh;
- }
-}
+
 
 
 

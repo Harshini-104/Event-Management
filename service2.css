@@ -109,11 +109,22 @@ nav ul li:hover{
   letter-spacing: 3px;
   margin-top: 20px;
 }
+@media (max-width: 445px) {
+  .what{
+    width: 75vh;
+  }
+
+  .contentwe{
+    font-size: 20px;
+  }
+}
 
 @media (max-width: 375px) {
   .contentwe {
     font-size: 18px;
   }
+
+
 }
 
 @media (max-width: 320px) {
@@ -204,7 +215,8 @@ nav ul li:hover{
   }
 }
 
-@media (max-width: 375px) {
+
+@media (max-width: 445px) {
   .servicecontent{
     grid-template-columns: 1fr;
     padding-left: 30px;
@@ -445,6 +457,7 @@ nav ul li:hover{
 }
 
 
+
 @media (max-width: 425px) {
   .detailscard img {
     height: 220px;
@@ -477,7 +490,9 @@ nav ul li:hover{
 @media (max-width: 375px) {
   .servicedetails {
     grid-template-columns: 1fr;
+    
   }
+
 }
 
 

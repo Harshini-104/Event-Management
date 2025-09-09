@@ -190,19 +190,19 @@ nav ul li:hover{
 
 .maintext {
   flex: 1 1 45%;
-  max-width: 500px;
+  max-width: 700px;
   position: relative;
 }
 
 .maintext h4 {
-  font-size: 14px;
+  font-size: 24px;
   letter-spacing: 2px;
   color: white;
   margin-bottom: 15px;
 }
 
 .maintext h1 {
-  font-size: 48px;
+  font-size: 68px;
   font-weight: bold;
   margin-bottom: 20px;
   line-height: 1.2;
@@ -210,7 +210,7 @@ nav ul li:hover{
 }
 
 .maintext p {
-  font-size: 15px;
+  font-size: 22px;
   margin-bottom: 25px;
   color: white;
 }
@@ -268,7 +268,7 @@ nav ul li:hover{
   100% { background-position: 0% 50%; }
 }
 
-.img-content{
+/* .img-content{
   border-radius: 20px;
   margin-left: 75px;
   width: 75%;
@@ -302,15 +302,86 @@ nav ul li:hover{
 }
 .img-content:hover{
   transform: translateY(0px);
+} */
+
+.image-box {
+  position: relative;
+  width: 100%;
+  max-width: 400px; 
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.image-box img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.img-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  padding: 20px;
+}
+
+.image-box:hover img {
+  transform: scale(1.1); 
+}
+
+.image-box:hover .img-content {
+  opacity: 1;
+}
+
+.img-content h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.img-content p {
+  font-size: 16px;
 }
 
 
-@media (max-width: 1440px) {
-  .img-content{
-    height: 99%;
-    width: 75%;
+@media (max-width: 768px) {
+  .img-content h1 {
+    font-size: 22px;
+  }
+  .img-content p {
+    font-size: 14px;
   }
 }
+
+@media (max-width: 480px) {
+  .img-content h1 {
+    font-size: 18px;
+  }
+  .img-content p {
+    font-size: 12px;
+  }
+}
+
+
+
+
+@media (max-width: 1440px){
+  .happy{
+    position: relative;
+    top: 100px;
+  }
+}
+
 
 
 
@@ -336,33 +407,10 @@ nav ul li:hover{
     font-size: 15px;
   }
 
-  .image-box {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
 
-  .image-box img {
-    max-width: 80%;
-  }
-
-  .img-content {
-    margin-left: 24px;
-    width: 80%;
-    height: 96%;
-  }
 }
 
-@media (max-width: 375px) {
-  .img-content{
-    margin-left: 32px;
-    height: 97.5%;
-    width: 80.2%;
-  }
 
-  .img-content p{
-    font-size: 10px;
-  }
-}
 
 
 

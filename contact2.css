@@ -93,214 +93,215 @@ nav ul li:hover{
 /* section contact */
 
 .contact{
-    background: url(./image/contact.jpg) no-repeat center center/cover;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
+  background: url(./image/contact.jpg) no-repeat center center/cover;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 .contactimg{
-    max-width: 1100px;
-    margin: auto;
-    padding: 40px 20px;
-    text-align: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+  text-align: center;
 }
 
 .contacttext h2{
-    font-size: 32px;
-    letter-spacing: 5px;
+  font-size: 32px;
+  letter-spacing: 5px;
 
 }
 .contacttext p{
-    font-size: 15px;
-    font-family: cursive;
+  font-size: 15px;
+  font-family: cursive;
 }
 
 /* section mail */
 
 .mail{
-    max-width: 1100px;
-    margin: auto;
-    padding: 40px 20px;
-    display: flex;
-    justify-content: space-around;
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .mailbox{
-    display: flex;
-    gap: 30px;
-    line-height: 35px;
+  display: flex;
+  gap: 30px;
+  line-height: 35px;
 
 }
 
 .mailbox h2{
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .mailbox p{
-    color: #444;
-    font-size: 16px;
+  color: #444;
+  font-size: 16px;
 }
 
 .icon{
-    width: 70px;
-    height: 70px;
-    margin: 0 auto 15px;
-    background-color: green;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 15px;
+  background-color: green;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: non;
 }
 
 .icon i{
-    font-size: 25px;
+  font-size: 25px;
 }
 .icon:hover{
-    background-color: orangered;
+  background-color: orangered;
 }
 
 
 @media (max-width: 992px) {
-    .mail {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 30px 15px;
-    }
+  .mail {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px 15px;
+  }
 
-    .mailbox {
-        flex-direction: column;
-        gap: 20px;
-    }
+  .mailbox {
+    flex-direction: column;
+    gap: 20px;
+  }
 
-    .icon {
-        width: 60px;
-        height: 60px;
-    }
+  .icon {
+    width: 60px;
+    height: 60px;
+  }
 
-    .mailbox h2 {
-        font-size: 18px;
-    }
+  .mailbox h2 {
+    font-size: 18px;
+  }
 
-    .mailbox p {
-        font-size: 15px;
-    }
+  .mailbox p {
+    font-size: 15px;
+  }
 }
 
 
 @media (max-width: 600px) {
-    .mail {
-        padding: 20px 10px;
-    }
+  .mail {
+    padding: 20px 10px;
+  }
 
-    .icon {
-        width: 50px;
-        height: 50px;
-    }
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
 
-    .icon i {
-        font-size: 20px;
-    }
+  .icon i {
+    font-size: 20px;
+  }
 
-    .mailbox h2 {
-        font-size: 16px;
-    }
+  .mailbox h2 {
+    font-size: 16px;
+  }
 
-    .mailbox p {
-        font-size: 14px;
-        line-height: 24px;
-    }
+  .mailbox p {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 
 /* section map */
 
 .map{
-    max-width: 1100px;
-    margin: auto;
-    padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
 }
 
 .location{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    letter-spacing: 3px;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 3px;
+  flex-direction: column;
 }
 
 iframe{
-    width: 90%;
+  width: 90%;
 }
 
 .map iframe{
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 
 /* section details */
 
 .details{
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .formcontainer{
-    background-color: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    width: 900px;
-    max-width: 90%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 900px;
+  max-width: 90%;
 }
 
 form{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .group{
-    flex: 1 1 45%;
-    display: flex;
-    flex-direction: column;
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
 }
 
 .group-width{
-    flex: 1 1 100%;
+  flex: 1 1 100%;
 }
 
 label{
-    font-weight: 600;
-    margin-bottom: 6px;
-    font-size: 15px;
-    color: black;
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 15px;
+  color: black;
 }
 
 label span{
-    color: red;
+  color: red;
 }
 
 input, textarea{
-    pad: 12px;
-    font-size: 15px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    outline: none;
-    transition: border 0.3s, box-shodow 0.3s;
+  pad: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border 0.3s, box-shodow 0.3s;
 }
 
 input:focus, textarea:focus{
-    border-color: #6c63ff;
-    box-shadow: 0 0 6px rgba(108,99,255,0.4);
+  border-color: #6c63ff;
+  box-shadow: 0 0 6px rgba(108,99,255,0.4);
 
 }
 .submitbtn{

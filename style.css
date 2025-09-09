@@ -374,18 +374,6 @@ nav ul li:hover{
 
 
 
-
-@media (max-width: 1440px){
-  .happy{
-    position: relative;
-    top: 100px;
-  }
-}
-
-
-
-
-
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;

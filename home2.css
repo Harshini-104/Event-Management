@@ -108,9 +108,12 @@ nav ul li:hover{
     background: #444;
     position: absolute;
     top: 60px;
-    right: 20px;
+    right: 0px;
     padding: 15px;
     border-radius: 8px;
+    width: 100%;
+    text-align: center;
+    gap: 30px;
   }
 
   .nav-links.show {

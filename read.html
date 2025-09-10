@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Page</title>
+  <link rel="stylesheet" href="./blog.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+
+  body {
+    color: white;
+    background: #1e1e1e;
+  }
+
+  .header {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .logo {
+    color: aqua;
+  }
+
+  nav {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(67, 65, 65);
+    position: relative;
+    height: 70px;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 60px;
+  }
+
+  nav ul li {
+    list-style-type: none;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: aqua;
+  }
+
+  .menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    color: aqua;
+  }
+
+  .loginbtn {
+    outline: none;
+    background-color: aqua;
+    text-decoration: none;
+    width: 50px;
+    height: 25px;
+    color: black;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  nav ul li:hover {
+    text-decoration: underline;
+    color: aqua;
+  }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: #444;
+      position: absolute;
+      top: 60px;
+      right: 0px;
+      padding: 15px;
+      border-radius: 8px;
+      width: 100%;
+      text-align: center;
+      gap: 30px;
+    }
+
+    .nav-links.show {
+      display: flex;
+    }
+
+    .menu-icon {
+      display: block;
+    }
+  }
+
+
+  /* section services */
+  .service {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .span2 {
+    color: #dc143c;
+  }
+
+  .sertext h1 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .sertext p {
+    max-width: 800px;
+    margin: 10px auto 40px;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .sertext h4 {
+    max-width: 800px;
+    margin: 10px auto 40px;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  .infoservice {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 50px 20px;
+    flex-wrap: wrap;
+  }
+
+  .imageservices {
+    text-align: center;
+    max-width: 300px;
+  }
+
+  .imageservices img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: tranform 0.8s ease, box-shadow 0.8s;
+  }
+
+  .imageservices img:hover {
+    transform: scale(1.05);
+
+  }
+
+  .imageservices p {
+    color: gray;
+  }
+
+  @media(max-width: 768px) {
+    .infoservice {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  /* Section  10*/
+  .section {
+    padding: 60px 10%;
+    background: #fff;
+  }
+
+  .container {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .event-images {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    max-width: 400px;
+  }
+
+  .img-box img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+  }
+
+
+  .experience {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    color: #e63946;
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 12px;
+    font-weight: bold;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .experience h2 {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .experience p {
+    margin: 0;
+    font-size: 15px;
+    color: #333;
+  }
+
+  .eventcontent {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .subtitle {
+    color: #e63946;
+    font-weight: 600;
+  }
+
+  .eventcontent h1 {
+    font-size: 30px;
+    margin: 10px 0;
+    color: black;
+  }
+
+  .eventcontent p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: black;
+  }
+
+
+  .check {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    color: black;
+  }
+
+  .check li {
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: black;
+  }
+
+  .check i {
+    color: #e63946;
+    margin-right: 8px;
+  }
+
+
+  .bottom {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+    color: #444;
+  }
+
+
+  @media (max-width: 900px) {
+    .eventcontainer {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .experience {
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: none;
+      margin-top: -20px;
+    }
+  }
+</style>
+
+
+<body>
+  <!-- header section -->
+  <header class="header">
+    <nav>
+
+      <div class="logo">
+        <h1>Stackly</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./service.html">Service</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <a href="./login.html"><button class="loginbtn">Login</button></a>
+      </ul>
+      <div class="menu-icon" onclick="toggleMenu()"> <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  <!-- section service -->
+
+  <section class="service">
+    <div class="sertext">
+      <div class="texthead">
+        <h1 data-aos="fade-up"><span class="span2">Stackly</span> Services</h1>
+        <p data-aos="fade-up">We make your events smart & impactful by personalised event management
+          services
+        </p>
+      </div>
+    </div>
+
+    <div class="infoservice">
+      <div class="imageservices">
+        <img data-aos="zoom-in-up" src="./image/social events.jpg" alt="">
+        <h3 data-aos="fade-up">Social Event</h3>
+      </div>
+
+
+      <div class="imageservices">
+        <img data-aos="zoom-in-up" src="./image/success.jpg" alt="">
+        <h3 data-aos="fade-up">Birthday Parties</h3>
+      </div>
+
+      <div class="imageservices">
+        <img data-aos="zoom-in-up" src="./image/thumbnail.jpg" alt="">
+        <h3 data-aos="fade-up">Wedding</h3>
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="section">
+    <div class="container">
+
+      <div class="event-images">
+        <div class="img-box"><img src="images/blog4.jpg" alt=""></div>
+        <div class="img-box"><img src="images/blog4.jpg" alt=""></div>
+        <div class="img-box"><img src="images/blog4.jpg" alt=""></div>
+        <div class="img-box"><img src="images/blog4.jpg" alt="Event"></div>
+
+        <div class="experience">
+          <h2>10+</h2>
+          <p>Years of experience</p>
+        </div>
+      </div>
+      <div class="eventcontent">
+        <span class="subtitle">Top Event Management</span>
+        <h1>Welcome to the world's largest Event Management</h1>
+        <p>
+          Handling the practical aspects of the wedding day, including setting up the venue, managing the flow of
+          events, and coordinating the breakdown after the celebration. Overseeing the financial aspects of the wedding to ensure it stays
+          within the planned budget.
+        </p>
+
+        <ul class="check">
+          <li><i class="fa fa-check"></i> Recommending upto three Photographers</li>
+          <li><i class="fa fa-check"></i> Coordinating paer goods with a Stationery vendor</li>
+          <li><i class="fa fa-check"></i> Managing your guests lists</li>
+          <li><i class="fa fa-check"></i> organizing a tasting with up to three caterers</li>
+        </ul>
+
+        <p class="bottom">
+          From Wedding Functions to Birthday Parties or Corporate Events to Musical Functions, We offer full range of Events Management Services that scale to your needs & budget.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+  <script>
+    // $(document).on('ready', function () {
+    // initialization of aos
+    AOS.init({
+      duration: 650,
+      once: false,
+      mirror: true,
+    });
+  </script>
+
+
+  <script>
+    function toggleMenu() {
+      document.querySelector(".nav-links").classList.toggle("show");
+    }
+  </script>
+</body>
+
+</html>

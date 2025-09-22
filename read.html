@@ -92,10 +92,36 @@
     cursor: pointer;
   }
 
-  nav ul li:hover {
-    text-decoration: underline;
-    color: aqua;
-  }
+  nav ul li a {
+  text-decoration: none;
+  color: #00ffff; 
+  font-weight: 500;
+  font-size: 15px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+
+nav ul li a:hover {
+  background-color: #00ffff;
+  color: #222; 
+  box-shadow: 0 2px 8px rgba(0,255,255,0.3);
+}
+
+
+.menu-icon {
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  color: #00ffff;
+  transition: color 0.3s ease;
+}
+
+.menu-icon:hover {
+  color: #f1c40f; 
+}
+
 
   @media (max-width: 768px) {
     .nav-links {

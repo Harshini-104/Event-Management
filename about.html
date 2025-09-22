@@ -57,6 +57,10 @@
         </div>
     </section>
 
+    <br>
+    <br>
+    <br>
+
     <!-- section No1 -->
 
     <section class="about">
@@ -69,21 +73,21 @@
         <div class="right">
             <div data-aos="zoom-out-down" class="bbox">
                 <h2>Our Mission</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo modi,
-                    totam tempore aspernatur, Fugit quo quos magnam nesciunt.
+                <p>From product launches to company anniversaries, we handle all aspects of your corporate event.
+                    Let us make your special day truly unforgettable with our meticulous wedding planning services.
                 </p>
 
-                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="para">Professional conference management including venue selection, speaker coordination, and more.</p>
 
             </div>
 
             <div data-aos="zoom-out-down" class="bbox">
                 <h2>Event Specialisation</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo modi,
-                    totam tempore aspernatur, Fugit quo quos magnam nesciunt.
+                <p>Let us make your special day truly unforgettable with our meticulous wedding planning services.
+                    From product launches to company anniversaries, we handle all aspects of your corporate event.
                 </p>
 
-                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p class="para">Professional conference management including venue selection, speaker coordination, and more.</p>
 
             </div>
         </div>
@@ -193,9 +197,9 @@
 
         <div class="createinfo">
             <div data-aos="zoom-out-up" class="imagecreate">
-                <img src="./image/event.jpg" alt="">
-                <h3>Our Vision</h3>
-                <p>creating a clear, inspiring, and actionable picture of what the event aims to achieve
+                <img src="./image/event.jpg" alt="" >
+                <h3 data-aos="fade-up">Our Vision</h3>
+                <p data-aos="fade-up">creating a clear, inspiring, and actionable picture of what the event aims to achieve
                     and how it will be remembered. It's more than just a goal; it's a guiding force that shapes
                     all aspects of the event, from its initial concept to its final execution.
                 </p>
@@ -203,8 +207,8 @@
 
             <div data-aos="zoom-out-up" class="imagecreate">
                 <img src="./image/cake.jpg" alt="">
-                <h3>Our Vision</h3>
-                <p>creating a clear, inspiring, and actionable picture of what the event aims to achieve
+                <h3 data-aos="fade-up">Our Vision</h3>
+                <p data-aos="fade-up">creating a clear, inspiring, and actionable picture of what the event aims to achieve
                     and how it will be remembered. It's more than just a goal; it's a guiding force that shapes
                     all aspects of the event, from its initial concept to its final execution.
                 </p>
@@ -212,8 +216,8 @@
 
             <div data-aos="zoom-out-up" class="imagecreate">
                 <img src="./image/corporate.jpg" alt="">
-                <h3>Our Vision</h3>
-                <p>creating a clear, inspiring, and actionable picture of what the event aims to achieve
+                <h3 data-aos="fade-up">Our Vision</h3>
+                <p data-aos="fade-up">creating a clear, inspiring, and actionable picture of what the event aims to achieve
                     and how it will be remembered. It's more than just a goal; it's a guiding force that shapes
                     all aspects of the event, from its initial concept to its final execution.
                 </p>
@@ -423,24 +427,43 @@
     <script>
         const counters = document.querySelectorAll('.counter');
 
-        counters.forEach(counter => {
-            counter.innerText = '0';
+const options = {
+  root: null, // viewport
+  rootMargin: '0px',
+  threshold: 0.5 // trigger when 50% of element is visible
+};
 
-            const updateCounter = () => {
-                const target = +counter.getAttribute('data-target');
-                const current = +counter.innerText;
-                const increment = target / 100; // speed control
+const startCounter = (entry) => {
+  const counter = entry.target;
+  const target = +counter.getAttribute('data-target');
+  let count = 0;
+  const increment = Math.ceil(target / 200); // adjust speed
 
-                if (current < target) {
-                    counter.innerText = `${Math.ceil(current + increment)}`;
-                    setTimeout(updateCounter, 20);
-                } else {
-                    counter.innerText = target;
-                }
-            };
+  const updateCount = () => {
+    if (count < target) {
+      count += increment;
+      counter.innerText = count > target ? target : count;
+      requestAnimationFrame(updateCount);
+    } else {
+      counter.innerText = target;
+    }
+  };
+  updateCount();
+};
 
-            updateCounter();
-        });
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      startCounter(entry);
+      observer.unobserve(entry.target); // stop observing after counting
+    }
+  });
+}, options);
+
+counters.forEach(counter => {
+  observer.observe(counter);
+});
+
     </script>
 </body>
 

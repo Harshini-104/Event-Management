@@ -21,6 +21,10 @@
 </head>
 
 <body>
+    <div class="dark-mode-toggle">
+    <button onclick="toggleDarkMode()"><i class="fa-solid fa-moon"></i></button>
+</div>
+
     <!-- header section -->
     <header class="header">
         <nav>
@@ -90,7 +94,7 @@
 
     <section class="welcome">
         <div class="text">
-            <h2 data-aos="fade-up">Welcome to <span class="span1">Stackly</span></h2>
+            <h2 data-aos="flip-left">Welcome to <span class="span1">Stackly</span></h2>
             <p data-aos="fade-up">From Wedding Functions to Birthday Parties to Corporate Events to Musical
                 Functions,
                 We offer full range of Events management Services that scale to your needs & budget
@@ -98,10 +102,11 @@
         </div>
 
         <div class="features">
-            <div data-aos="fade-up" data-aos-duration="300" class="box">
-                <i class="fa-brands fa-algolia"></i>
-                <h3>Greate Services</h3>
-                <p>Wedding event management is the comprehensive coordination of a wedding's logistics and
+            <div data-aos="flip-left" class="box">
+                <i class="fa-brands fa-algolia" data-aos="fade-up"></i>
+                <h3 data-aos="fade-up">Greate Services</h3>
+                <p data-aos="fade-up">Wedding event management is the comprehensive coordination of a wedding's
+                    logistics and
                     vendors to ensure a seamless and successful celebration, covering everything from vendor
                     selection and budget management to day-of execution and setup/breakdown. Handling the practical
                     aspects of the wedding day, including setting up the venue, managing the flow of events, and
@@ -113,10 +118,11 @@
                 <a href="./read.html"><button class="read">Read More</button></a>
             </div>
 
-            <div data-aos="fade-up" data-aos-duration="700" class="box">
-                <i class="fa-brands fa-algolia"></i>
-                <h3>Greate People</h3>
-                <p>Birthday event management is the comprehensive coordination of a birthday event logistics and
+            <div data-aos="flip-left" class="box">
+                <i class="fa-brands fa-algolia" data-aos="fade-up"></i>
+                <h3 data-aos="fade-up">Greate People</h3>
+                <p data-aos="fade-up">Birthday event management is the comprehensive coordination of a birthday event
+                    logistics and
                     vendors to ensure a seamless and successful celebration, covering everything from vendor
                     selection and budget management to day-of execution and setup/breakdown. Handling the practical
                     aspects of the wedding day, including setting up the venue, managing the flow of events, and
@@ -128,10 +134,11 @@
                 <a href="./read.html"><button class="read">Read More</button></a>
             </div>
 
-            <div data-aos="fade-up" data-aos-duration="1000" class="box">
-                <i class="fa-brands fa-algolia"></i>
-                <h3>Greate Ideas</h3>
-                <p>Corporate event management is the comprehensive coordination of a corporate logistics and
+            <div data-aos="flip-left"  class="box">
+                <i class="fa-brands fa-algolia" data-aos="fade-up"></i>
+                <h3 data-aos="fade-up">Greate Ideas</h3>
+                <p data-aos="fade-up">Corporate event management is the comprehensive coordination of a corporate
+                    logistics and
                     vendors to ensure a seamless and successful celebration, covering everything from vendor
                     selection and budget management to day-of execution and setup/breakdown. Handling the practical
                     aspects of the wedding day, including setting up the venue, managing the flow of events, and
@@ -144,6 +151,56 @@
             </div>
         </div>
     </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-container">
+            <!-- Left Content -->
+            <div class="about-text">
+                <h2 data-aos="fade-up">About Us</h2>
+                <p data-aos="fade-up" class="subtitle">Learn more about our event management company and our mission</p>
+
+                <h3 data-aos="fade-up">We Create Memorable Events</h3>
+                <p data-aos="fade-up">
+                    Stackly was founded in 2010 with a mission to create exceptional events that leave lasting
+                    impressions.
+                    Our team of experienced event planners and coordinators are dedicated to making your vision a
+                    reality.
+                    We believe that every event is unique and deserves personalized attention.
+                    From intimate gatherings to large-scale conferences, we approach each project with creativity,
+                    professionalism, and meticulous attention to detail.
+                </p>
+
+                <!-- Stats -->
+                <div class="stats">
+                    <div data-aos="flip-left"  class="stat-box">
+                        <h4>500+</h4>
+                        <p>Events Organized</p>
+                    </div>
+                    <div data-aos="flip-left"  class="stat-box">
+                        <h4>98%</h4>
+                        <p>Client Satisfaction</p>
+                    </div>
+                    <div data-aos="flip-left"  class="stat-box">
+                        <h4>50+</h4>
+                        <p>Team Members</p>
+                    </div>
+                    <div data-aos="flip-left"  class="stat-box">
+                        <h4>12+</h4>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Image -->
+            <div class="about-image">
+                <img src="./image/blog1.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
 
     <!-- section service -->
 
@@ -235,7 +292,7 @@
 
             <div data-aos="zoom-in" class="card orange">
                 <i data-aos="fade-up" class="fa-solid fa-circle-info"></i>
-                <h3 data-aos="fade-up">Access To Events</h3>
+                <h3 data-aos="fade-up">Clear Objective</h3>
                 <p data-aos="fade-up">At Access Events, we understand the connection between the mastery of logistics
                     and the creation of
                     astonishing experiences. Our events are completely customized to reflect each client's brand
@@ -245,9 +302,9 @@
 
             </div>
 
-            <div data-aos="zoom-in" class="card red">
+                <div data-aos="zoom-in" class="card red">
                 <i data-aos="fade-up" class="fa-solid fa-chalkboard"></i>
-                <h3 data-aos="fade-up">Access To Events</h3>
+                <h3 data-aos="fade-up">Pop-Up Events</h3>
                 <p data-aos="fade-up">At Access Events, we understand the connection between the mastery of logistics
                     and the creation of
                     astonishing experiences. Our events are completely customized to reflect each client's brand
@@ -256,8 +313,13 @@
                 </p>
 
             </div>
+
+            
+
+            
         </div>
     </section>
+
     <!-- section gallery -->
     <section class="gallery">
         <div data-aos="zoom-in-right" class="galltext">
@@ -389,6 +451,8 @@
         }
     </script>
     <script src="./home.js"></script>
+
+    
 </body>
 
 </html>

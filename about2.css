@@ -51,15 +51,33 @@ nav ul li a{
   color: aqua;
 }
 
-.loginbtn{
+.loginbtn {
   outline: none;
-  background-color: aqua;
-  text-decoration: none;
-  width: 50px;
-  height: 25px;
-  color: black;
-  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, #4facfe, #00f2fe); 
+  color: #fff;
+  width: 80px;  
+  height: 35px; 
+  border-radius: 20px; 
   cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  position: relative;
+  bottom: 7px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.loginbtn:hover {
+  background: linear-gradient(135deg, #00f2fe, #4facfe); 
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.loginbtn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 nav ul li:hover{
@@ -117,7 +135,7 @@ nav ul li:hover{
 
 .subtitle{
   font-size: 15px;
-  color: #dc143c;
+  color: #ff9800;
   margin-top: 10px;
 }
 .abouttext h1{
@@ -140,13 +158,13 @@ nav ul li:hover{
   background: transparent;
   cursor: pointer;
   transition: 0.3s ease;
-  border: 2px solid #dc143c;
+  border: 2px solid #ff9800;
 }
 
 
 
 .aboutbtn:hover {
-  background:#dc143c;
+  background:#ff9800;
   color: #fff;
   border-color: #333;
 }
@@ -225,7 +243,7 @@ nav ul li:hover{
 
 .subtitle{
   font-size: 15px;
-  color: #dc143c;
+  color: #ff9800;
   margin-top: 10px;
 }
 
@@ -249,11 +267,11 @@ nav ul li:hover{
   background: transparent;
   cursor: pointer;
   transition: 0.3s ease;
-  border: 2px solid #dc143c;
+  border: 2px solid #ff9800;
 }
 
 .aboutbtn:hover {
-  background:#dc143c;
+  background:#ff9800;
   color: #fff;
   border-color: #333;
 }
@@ -338,7 +356,7 @@ nav ul li:hover{
   background: #1e1e1e;
 }
 .span1{
-  color: #dc143c;
+  color: #ff9800;
 }
 .aboutvideo h2{
   font-size: 32px;
@@ -392,7 +410,7 @@ nav ul li:hover{
 .videotext button{
   display: inline-block;
   padding: 12px 22px;
-  background-color: #e91e63;
+  background-color: #ff9800;
   color: white;
   text-decoration: none;
   border-radius: 6px;
@@ -402,7 +420,7 @@ nav ul li:hover{
 
 
 .videotext button:hover {
-  background: #c2185b;
+  background: #ff9800;
 }
 
 .videoimg img {
@@ -507,7 +525,7 @@ nav ul li:hover{
 }
 
 .righttext span {
-  color: #e91e63;
+  color: #ff9800;
 }
 .righttext {
   flex: 1;
@@ -758,7 +776,7 @@ nav ul li:hover{
   top: 170px; 
   left: 47%;
   transform: translateX(-50%);
-  background: #f50454;
+  background: #ff9800;
   color: #fff;
   font-size: 20px;
   width: 50px;

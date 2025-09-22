@@ -10,10 +10,9 @@ html,body{
   width: 100%;
 }
 body{
-  color: white;
-  background: #1e1e1e;
+    color: white;
+    background: #1e1e1e;
 }
-
 
 .header{
   width: 100%;
@@ -74,7 +73,7 @@ nav ul li a{
 }
 
 .loginbtn:hover {
-  background: linear-gradient(135deg, #00f2fe, #4facfe); /* gradient swap on hover */
+  background: linear-gradient(135deg, #00f2fe, #4facfe);
   transform: translateY(-2px);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
 }
@@ -83,12 +82,11 @@ nav ul li a{
   transform: translateY(0);
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
-
-
 nav ul li:hover{
   text-decoration: underline;
   color: aqua;
 }
+
 @media (max-width: 768px) {
   .nav-links {
     display: none; 
@@ -96,10 +94,10 @@ nav ul li:hover{
     background: #444;
     position: absolute;
     top: 60px;
-    right: 0%;
+    right: 0px;
     padding: 15px;
     border-radius: 8px;
-    width: 10%;
+    width: 110%;
     text-align: center;
     gap: 30px;
   }
@@ -112,6 +110,7 @@ nav ul li:hover{
     display: block; 
   }
 }
+
 
 /* section event */
 

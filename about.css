@@ -263,6 +263,20 @@ nav ul li a:hover {
   }
 }
 
+.team {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("./image/blog3.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.create {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url("./image/blog3.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+
 
 /* section No. */
 .about {
@@ -649,7 +663,7 @@ nav ul li a:hover {
 
 /* section create */
 .create {
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
   padding: 80px 40px;
   display: flex;
@@ -677,7 +691,7 @@ nav ul li a:hover {
 
 .text p {
   font-size: 16px;
-  color: rgb(175, 167, 167);
+  color: white;
   margin-top: 20px;
   line-height: 1.6;
 }

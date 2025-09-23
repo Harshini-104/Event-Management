@@ -1163,3 +1163,78 @@ nav ul li a:hover {
   cursor: pointer;
   color: #B12C00;
 }
+
+/* Tablet screens (≤ 992px) */
+@media (max-width: 992px) {
+  .footer {
+    padding: 40px 60px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .subscribe form {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .subscribe input {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+
+  .subscribe button {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  .bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+}
+
+/* Mobile screens (≤ 600px) */
+@media (max-width: 600px) {
+  .footer {
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .foottext h3 {
+    font-size: 16px;
+  }
+
+  .foottext ul li {
+    font-size: 14px;
+  }
+
+  .subscribe h3 {
+    font-size: 16px;
+  }
+
+  .subscribe input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .subscribe button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .contactfoot p {
+    font-size: 14px;
+  }
+
+  .bottom p {
+    font-size: 12px;
+  }
+
+  .icons a {
+    font-size: 16px;
+    margin: 0 6px;
+  }
+}

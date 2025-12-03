@@ -337,11 +337,11 @@
     </section>
     <!-- section contact -->
     <div class="contactpro">
-        <h1 data-aos="zoom-in-right">Get in Touch with <span class="span4">Stackly</span></h1>
+        <h1>Get in Touch with <span class="span4">Stackly</span></h1>
     </div>
     <br>
     <section class="contact">
-        <div data-aos="zoom-out-up" class="contactbox">
+        <div class="contactbox">
             <h2 data-aos="fade-up">Get in Touch With Us!</h2>
             <p data-aos="fade-up">Ask questions, schedule a meeting or request a proposal. Lets Get Started</p>
             <a data-aos="fade-up" href="./cont.html"><button class="contactbtn">contact us now</button></a>
@@ -403,6 +403,25 @@
 
 
 
+<script>
+  document.querySelector(".aa").addEventListener("click", function (e) {
+    const emailInput = document.querySelector("input[type='email']");
+    const email = emailInput.value.trim();
+
+    // simple regex validation
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (email === "") {
+      e.preventDefault();
+      alert("Please enter your email.");
+      emailInput.focus();
+    } else if (!emailPattern.test(email)) {
+      e.preventDefault();
+      alert("Please enter a valid email address.");
+      emailInput.focus();
+    }
+  });
+</script>
 
 
 

@@ -1,154 +1,201 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
 }
 
-html,body{
+html,
+body {
   height: 100%;
   width: 100%;
 }
-body{
-    color: white;
-    background: #1e1e1e;
+
+body {
+  color: white;
+  background: #1e1e1e;
 }
 
-.header{
+/* section header */
+.header {
   width: 100%;
   position: fixed;
-  z-index: 100;
   top: 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  z-index: 999;
+  background: rgba(25, 25, 25, 0.92);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
 }
 
-.logo {
-  filter: invert(78%) sepia(96%) saturate(480%) hue-rotate(2deg) brightness(100%) contrast(100%);
-}
-
-.logo img{
-  width: 200px;
-  height: 50px;
-  padding-left: 50px;  
- 
-}
-
-nav{
-  padding: 10px 30px;
+nav {
+  height: 70px;
+  padding: 0 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgb(67, 65, 65);
-  position: relative;
-  height: 70px;
 }
 
-nav ul{
+
+.logo img {
+  width: 180px;
+  height: auto;
+   filter: invert(78%) sepia(96%) saturate(480%) hue-rotate(2deg) brightness(100%) contrast(100%);
+
+}
+
+
+.nav-links {
   display: flex;
-  gap: 60px;
+  align-items: center;
+  gap: 45px;
 }
 
-nav ul li{
-  list-style-type: none;
-}
-nav ul li a{
-  text-decoration: none;
-  color: #f8ba00;
-}
-.menu-icon {
-  font-size: 28px;
-  cursor: pointer;
-  display: none; 
-  color: #f8ba00;
-}
-.loginbtn {
-  outline: none;
-  border: none;
-  background: linear-gradient(135deg, #f8ba00, #f8ba00); 
-  color: #fff;
-  width: 80px;  
-  height: 35px; 
-  border-radius: 20px; 
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 14px;
-  text-transform: uppercase;
+.nav-links li {
+  list-style: none;
   position: relative;
-  bottom: 7px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
 }
 
-.loginbtn:hover {
-  background: linear-gradient(135deg, #f8ba00, #4facfe);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
-}
-
-.loginbtn:active {
-  transform: translateY(0);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-nav ul li a {
+.nav-links a {
   text-decoration: none;
-  color: #f8ba00; 
-  font-weight: 500;
   font-size: 15px;
-  padding: 6px 12px;
-  border-radius: 4px;
-  transition: all 0.3s ease;
-}
-
-
-nav ul li a:hover {
-  background-color: #f8ba00;
-  color: #222; 
-  box-shadow: 0 2px 8px rgba(0,255,255,0.3);
-}
-
-
-.menu-icon {
-  font-size: 28px;
-  cursor: pointer;
-  display: none;
+  font-weight: 500;
   color: #f8ba00;
+  padding: 6px 0;
+  position: relative;
   transition: color 0.3s ease;
 }
 
-.menu-icon:hover {
-  color: #f1c40f; 
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 2px;
+  background: #f8ba00;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+
+.dropdown-menu {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  /* background: #1f1f1f; */
+  border-radius: 10px;
+  min-width: 13px;
+  padding: 8px 0;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.35s ease;
+}
+
+.dropdown-menu li a {
+  padding: 8px 16px;
+  display: block;
+  color: #fff;
+  font-size: 14px;
+}
+
+.dropdown-menu li a:hover {
+  background: #f8ba00;
+  color: #222;
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+
+.loginbtn {
+  border: none;
+  background: linear-gradient(135deg, #f8ba00, #ffdd55);
+  color: #222;
+  width: 90px;
+  height: 36px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.loginbtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(248, 186, 0, 0.4);
+}
+
+
+.menu-icon {
+  display: none;
+  font-size: 26px;
+  color: #f8ba00;
+  cursor: pointer;
 }
 
 
 @media (max-width: 768px) {
-  .nav-links {
-    display: none; 
-    flex-direction: column;
-    background: #444;
-    position: absolute;
-    top: 60px;
-    right: 0px;
-    padding: 15px;
-    border-radius: 8px;
-    width: 110%;
-    text-align: center;
-    gap: 30px;
-  }
-
-  .nav-links.show {
-    display: flex; 
+  nav {
+    padding: 0 20px;
   }
 
   .menu-icon {
-    display: block; 
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: #141414;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    gap: 28px;
+    transition: 0.4s ease;
+  }
+
+  .nav-links.show {
+    right: 0;
+  }
+
+  .nav-links a::after {
+    display: none;
+  }
+
+  .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    background: transparent;
+    box-shadow: none;
+    display: none;
+  }
+
+  .dropdown.active .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown-menu li a {
+    color: #f8ba00;
   }
 }
 
 
 /* section what we do */
 
-.what{
+.what {
   position: relative;
   background: url(./image/contact.jpg)no-repeat center center/cover;
   height: 50vh;
@@ -158,31 +205,31 @@ nav ul li a:hover {
   color: white;
 }
 
-.wedo{
+.wedo {
   max-width: 1100px;
   max-width: auto;
   padding: 40px 20px;
   text-align: center;
 }
 
-.contentwe{
+.contentwe {
   font-size: 32px;
   letter-spacing: 3px;
   margin-top: 20px;
 }
 
-.specialist{
+.specialist {
   max-width: 1100px;
   margin: auto;
   padding: 40px 20px;
   text-align: center;
 }
 
-.infoevent h1 span{
+.infoevent h1 span {
   color: #dc143c;
 }
 
-.infoevent h4{
+.infoevent h4 {
   max-width: 800px;
   margin: 10px auto 55px;
 }
@@ -204,7 +251,7 @@ nav ul li a:hover {
 }
 
 .infoevent h1 span {
-  color: #ff9800; 
+  color: #ff9800;
 }
 
 .infoevent h4 {
@@ -231,14 +278,14 @@ nav ul li a:hover {
   padding: 35px 25px;
   border-radius: 16px;
   text-align: center;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
 .servicebox:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
 }
 
 .servicebox i {
@@ -272,6 +319,7 @@ nav ul li a:hover {
   .infoevent h1 {
     font-size: 32px;
   }
+
   .infoevent h4 {
     font-size: 16px;
   }
@@ -313,7 +361,7 @@ nav ul li a:hover {
   padding: 35px 25px;
   border-radius: 16px;
   text-align: center;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
@@ -321,7 +369,7 @@ nav ul li a:hover {
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
 }
 
 
@@ -377,9 +425,11 @@ nav ul li a:hover {
   .contenthead h1 {
     font-size: 32px;
   }
+
   .card .price {
     font-size: 28px;
   }
+
   .card h3 {
     font-size: 18px;
   }
@@ -443,7 +493,7 @@ nav ul li a:hover {
 
 .photos:hover {
   transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .imghead {
@@ -451,7 +501,7 @@ nav ul li a:hover {
   bottom: 0;
   left: 0;
   width: 100%;
-  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
   color: #fff;
   padding: 20px;
   text-align: left;
@@ -483,32 +533,32 @@ nav ul li a:hover {
 
 /* section service list */
 
-.servicelist{
+.servicelist {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 30px;
   padding: 40px;
-  
+
 }
 
-.servicetext{
+.servicetext {
   flex: 1;
   margin-left: 95px;
 
 }
 
-.servicetext h2{
+.servicetext h2 {
   font-size: 26px;
   margin-bottom: 20px;
-   color: #dc143c;
+  color: #dc143c;
 }
 
-.servicetext h2 span{
+.servicetext h2 span {
   font-weight: bold;
 }
 
-.servicetext ul li{
+.servicetext ul li {
   font-size: 16px;
   margin-bottom: 12px;
   line-height: 1.5;
@@ -516,12 +566,12 @@ nav ul li a:hover {
   padding-left: 20px;
 }
 
-.serviceimg{
+.serviceimg {
   flex: 1;
   text-align: center;
 }
 
-.serviceimg img{
+.serviceimg img {
   height: 380px;
   width: 350px;
   border-radius: 10px;
@@ -599,10 +649,11 @@ nav ul li a:hover {
 
 /* section footer  */
 
-.footer{
+.footer {
   padding: 40px 150px;
 }
-.footer{
+
+.footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -610,30 +661,34 @@ nav ul li a:hover {
   /* max-width: 1100px; */
   margin: auto;
 }
+
 .footer {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-              url("./image/success1.jpg") no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./image/success1.jpg") no-repeat center center fixed;
   background-size: cover;
 }
-.foottext h3{
+
+.foottext h3 {
   margin-bottom: 15px;
   font-size: 18px;
 }
 
-.foottext ul{
+.foottext ul {
   list-style: none;
 
 }
 
 
-.foottext ul li{
+.foottext ul li {
   margin-bottom: 10px;
 }
-.foottext ul li:hover{
+
+.foottext ul li:hover {
   color: #B12C00;
   cursor: pointer;
 }
-.aa{
+
+.aa {
   text-decoration: none;
   background-color: #B12C00;
   display: flex;
@@ -643,22 +698,24 @@ nav ul li a:hover {
   color: white;
   font-weight: 600;
 }
-.subscribe p.sub{
+
+.subscribe p.sub {
   color: #B12C00;
   margin-top: 15px;
 }
 
-.subscribe form{
+.subscribe form {
   display: flex;
 
 }
 
-.subscribe input{
-  padding: 10px;    
+.subscribe input {
+  padding: 10px;
   width: 70%;
   border-radius: 4px 0 0 4px;
 }
-.subscribe button{
+
+.subscribe button {
   background-color: #B12C00;
   color: white;
   border: none;
@@ -666,20 +723,24 @@ nav ul li a:hover {
   border-radius: 0 4px 4px 0;
   font-weight: bold;
 }
-.subscribe button:hover{
+
+.subscribe button:hover {
   background-color: #B12C00;
   cursor: pointer;
 }
-.contactfoot p{
+
+.contactfoot p {
   margin-bottom: 8px;
   color: white;
 
 }
-.contactfoot i{
+
+.contactfoot i {
   margin-right: 8px;
   color: #B12C00;
 }
-.bottom{
+
+.bottom {
   width: 100%;
   max-width: 1200px;
   margin-top: 30px;
@@ -693,18 +754,20 @@ nav ul li a:hover {
 
 
 
-.bottom p{
+.bottom p {
   font-size: 14px;
 
 }
-.icons a{
+
+.icons a {
   margin: 0 8px;
   font-size: 18px;
   transition: color 0.3s;
   color: white;
 
 }
-.icons a:hover{
+
+.icons a:hover {
   cursor: pointer;
   color: #B12C00;
 }
